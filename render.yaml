@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: movie-recommender
+    env: python
+    plan: free
+    buildCommand: sh setup.sh  
+    startCommand: streamlit run app.py
